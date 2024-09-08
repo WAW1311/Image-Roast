@@ -39,6 +39,7 @@ def generate():
             "result" : result,
             }), 200
     except:
+        os.remove(file_path)
         return jsonify({"status" : False,
                         "result" : "terjadi kesalahan atau tidak ada foto yang diupload"
                         }), 400
