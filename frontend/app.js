@@ -23,7 +23,7 @@ function generate() {
     const formdata = new FormData();
     formdata.append('file',uploadfile.files[0]);
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://127.0.0.1:8000/generate', true);
+    xhr.open('POST', 'https://waw1311.pythonanywhere.com/generate', true);
     xhr.send(formdata);
     xhr.onload = function () {
         loading()
