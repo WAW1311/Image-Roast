@@ -40,7 +40,7 @@ function generate() {
             Result.textContent = response.result;
         } else {
             console.error('Error uploading file:', xhr.statusText);
-            result.textContent = 'Error uploading file. Please try again.';
+            Result.textContent = 'Error uploading file. Please try again.';
         }
     };
 };
